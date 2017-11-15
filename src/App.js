@@ -62,8 +62,8 @@ class App extends Component {
       phone: this.state.phone,
       email: this.state.email
     }
-    const errors = this.finalValidate(payload)
-    this.setState({ errors })
+    //const errors = this.finalValidate(payload)
+    //this.setState({ errors })
   }
 
   validateName = function(username) {
@@ -111,14 +111,14 @@ class App extends Component {
     return error
   }
 
-  finalValidate = function(data) {
+  /*finalValidate = function(data) {
     const errors = {}
     errors.username = this.validateName(data.username)
     errors.password = this.validatePassword(data.password)
     errors.email = this.validateEmail(data.email)
     errors.phone = this.validatePhone(data.phone)
     return errors
-  }
+  }*/
   render() {
     const {errors} = this.state
     return (
