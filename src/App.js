@@ -13,7 +13,7 @@ class App extends Component {
       errors: {}
     }
     this.handleChange = this.handleChange.bind(this)
-    this.handleSubmit = this.handleSubmit.bind(this)
+    //this.handleSubmit = this.handleSubmit.bind(this)
   }
 
   passwordRegex = /^(?=.*[a-z])(?=.*[A-Z])[a-zA-Z\d]{8,16}$/
@@ -54,7 +54,7 @@ class App extends Component {
     )
   }
 
-  handleSubmit = function(event) {
+  /*handleSubmit = function(event) {
     event.preventDefault()
     const payload = {
       username: this.state.username,
@@ -64,7 +64,7 @@ class App extends Component {
     }
     //const errors = this.finalValidate(payload)
     //this.setState({ errors })
-  }
+  }*/
 
   validateName = function(username) {
     let error = ""
