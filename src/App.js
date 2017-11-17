@@ -98,6 +98,10 @@ class App extends Component {
   validateEmail = function(email) {
     let error = ""
     if (!this.emailRegex.test(email)) {
+      if (email.length === 0) {
+        error = "Это поле не может быть пустым."
+      }
+      else
       error = "Указан некорректный E-mail."
     }
     return error
@@ -106,6 +110,10 @@ class App extends Component {
   validatePhone = function(phone) {
     let error = ""
     if (!this.phoneRegex.test(phone)) {
+      if (phone.length === 0) {
+        error = "Это поле не может быть пустым."
+      }
+      else
       error = "Указан некорректный номер телефона."
     }
     return error
